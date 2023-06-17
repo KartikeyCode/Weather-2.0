@@ -3,8 +3,7 @@ import { useState } from "react";
 const axios = require('axios')
 export default function Front(){
     require('dotenv').config();
-   const apiK = process.env.API_KEY;
-   console.log(apiK)
+    const apiK = process.env.API_KEY
     const [inputText, setInputText] = useState("")
     const [hide,setHide] = useState("hidden")
     const [weather, setWeather] = useState([])
